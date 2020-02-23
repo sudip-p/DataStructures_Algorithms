@@ -1,4 +1,4 @@
-package algorithms.ShortestPath;
+package algorithms.shortestPath;
 
 /**
  * A class where we implement Dijkstra's shortest path algorithm
@@ -6,5 +6,9 @@ package algorithms.ShortestPath;
  */
 public class Dijkstras {
 
+
+}
+
+class Node{
 
 }
