@@ -26,19 +26,20 @@ public class SelectionSort {
         Algorithm in a nutshell: Move the boundary of the unsorted elements
         one by one toward the end of the array
          */
-
-        for (int i = 0; i < arr.length - 1; i++) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
 
             int min = i;
 
             //Find the min element in arr
-            for(int j = i; j < arr.length - 1; j++){
+            for(int j = i; j < n - 1; j++){
 
                 if(arr[j] < arr[min]){
                     min  = j;
                 }
-                swap(arr, min, i);
+
             }
+            swap(arr, min, i);
         }
 
 
