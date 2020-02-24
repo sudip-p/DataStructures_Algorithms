@@ -40,7 +40,7 @@ public class InsertionSort {
     /**
      * Method to return a string version of an array
      * @param arr   Array to be formatted into a string
-     * @return  Returns the local string object created
+     * @return  Returns the local string object createds
      */
     private static String arrayToString(int[] arr){
         StringBuffer s = new StringBuffer("");
