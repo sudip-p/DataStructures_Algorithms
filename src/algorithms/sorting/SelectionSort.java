@@ -32,7 +32,7 @@ public class SelectionSort {
             int min = i;
 
             //Find the min element in arr
-            for(int j = i; j < n - 1; j++){
+            for(int j = i; j < n; j++){
 
                 if(arr[j] < arr[min]){
                     min  = j;
