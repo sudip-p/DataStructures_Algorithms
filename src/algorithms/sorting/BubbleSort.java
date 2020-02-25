@@ -1,4 +1,5 @@
 package algorithms.sorting;
+import algorithms.sorting.ArrayPrinter;
 
 public class BubbleSort {
 
@@ -8,9 +9,9 @@ public class BubbleSort {
      */
     public static void main(String[] args) {
         int[] data = {3,6,4,1,7,9,2,5,8,10};
-        System.out.println("Unsorted array= " + arrayToString(data));
+        System.out.println("Unsorted array= " + ArrayPrinter.arrayToString(data));
         sort(data);
-        System.out.println("Sorted array= " + arrayToString(data));
+        System.out.println("Sorted array= " + ArrayPrinter.arrayToString(data));
     }
 
     /**
@@ -34,28 +35,4 @@ public class BubbleSort {
         }
     }
 
-    /**
-     * Method to return a string version of an array
-     * @param arr   Array to be formatted into a string
-     * @return  Returns the local string object createds
-     */
-    private static String arrayToString(int[] arr){
-        StringBuffer s = new StringBuffer("");
-        int n = arr.length;
-
-        for (int i = 0; i < n; i++) {
-            if(i == 0){
-                s.append("[");
-            }
-            else if(i < n-1){
-                s.append(arr[i] + ", ");
-            }
-            else{
-                s.append(arr[i] + "]");
-            }
-
-        }
-
-        return s.toString();
-    }
 }

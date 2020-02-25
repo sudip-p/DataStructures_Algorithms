@@ -1,4 +1,5 @@
 package algorithms.sorting;
+import algorithms.sorting.ArrayPrinter;
 
 public class SelectionSort {
 
@@ -9,11 +10,9 @@ public class SelectionSort {
     public static void main(String[] args) {
 
         int[] data = {5,3,6,2,7,1,10,9};
-        System.out.print("Unsorted data = ");
-        print(data);
+        System.out.println("Unsorted array=" + ArrayPrinter.arrayToString(data));
         sort(data);
-        System.out.print("Sorted data = ");
-        print(data);
+        System.out.println("Sorted Array=" + ArrayPrinter.arrayToString(data));
 
     }
 
@@ -58,21 +57,6 @@ public class SelectionSort {
 
     }
 
-    private static void print(int[] data){
-
-        for(int i = 0; i < data.length; i++){
-            if(i == 0){
-                System.out.print("[");
-            }
-            if(i < data.length - 1){
-                System.out.print(data[i] + ", ");
-            }
-            else{
-                System.out.print(data[i] + "]\n");
-            }
-        }
-
-    }
 
 }
 

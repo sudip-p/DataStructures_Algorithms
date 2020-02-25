@@ -1,6 +1,8 @@
 package algorithms.sorting;
 
 
+import java.lang.reflect.Array;
+
 public class InsertionSort {
 
     /**
@@ -10,9 +12,9 @@ public class InsertionSort {
      */
     public static void main(String[] args) {
         int[] data  = {5,3,7,8,3,2,1,10,13,11};
-        System.out.println("Unsorted data = " + arrayToString(data));
+        System.out.println("Unsorted data = " + ArrayPrinter.arrayToString(data));
         sort(data);
-        System.out.println("Sorted data = " + arrayToString(data));
+        System.out.println("Sorted data = " + ArrayPrinter.arrayToString(data));
 
     }
 
@@ -37,29 +39,6 @@ public class InsertionSort {
         }
     }
 
-    /**
-     * Method to return a string version of an array
-     * @param arr   Array to be formatted into a string
-     * @return  Returns the local string object createds
-     */
-    private static String arrayToString(int[] arr){
-        StringBuffer s = new StringBuffer("");
-        int n = arr.length;
 
-        for (int i = 0; i < n; i++) {
-            if(i == 0){
-                s.append("[");
-            }
-            else if(i < n-1){
-                s.append(arr[i] + ", ");
-            }
-            else{
-                s.append(arr[i] + "]");
-            }
-
-        }
-
-        return s.toString();
-    }
 
 }
