@@ -1,8 +1,5 @@
 package algorithms.sorting;
 
-
-import java.lang.reflect.Array;
-
 public class InsertionSort {
 
     /**

@@ -1,5 +1,4 @@
 package algorithms.sorting;
-import algorithms.sorting.ArrayPrinter;
 
 public class BubbleSort {
 
